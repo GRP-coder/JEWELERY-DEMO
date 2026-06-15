@@ -1,0 +1,56 @@
+.payment-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brand-gradient);
+  padding: 2rem;
+}
+
+.payment-container {
+  background: var(--color-surface);
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  max-width: 500px;
+}
+
+.payment-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-text);
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-element {
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  background: var(--color-bg-alt);
+}
+
+.StripeElement {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}

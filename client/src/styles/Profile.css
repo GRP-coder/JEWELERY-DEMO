@@ -1,0 +1,124 @@
+.profile-page {
+  min-height: calc(100vh - 200px);
+  padding: 3rem 0;
+  background: var(--color-bg-alt);
+}
+
+.profile-card {
+  background: var(--color-surface);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  padding: 3rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-primary);
+}
+
+.profile-avatar-initials {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--brand-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  border: 3px solid var(--color-primary);
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 1.8rem;
+}
+
+.profile-info .email {
+  margin: 0.5rem 0 0 0;
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+.profile-info .phone {
+  margin: 0.25rem 0 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.profile-section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--color-surface-muted);
+  border-radius: 8px;
+}
+
+.profile-section h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.profile-section p {
+  margin: 0.25rem 0;
+  color: var(--color-text-muted);
+}
+
+.profile-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-divider);
+}
+
+.profile-actions .btn {
+  flex: 1;
+}
+
+@media (max-width: 640px) {
+  .profile-card {
+    padding: 1.5rem;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .profile-avatar,
+  .profile-avatar-initials {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+
+  .profile-info h1 {
+    font-size: 1.5rem;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,137 @@
+.settings-page {
+  min-height: calc(100vh - 200px);
+  padding: 3rem 0;
+  background: var(--color-bg-alt);
+}
+
+.settings-container {
+  background: var(--color-surface);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  padding: 3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.settings-container h1 {
+  margin: 0 0 2rem 0;
+  color: var(--color-text);
+  font-size: 2rem;
+}
+
+.settings-form {
+  margin-bottom: 2rem;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.form-section:last-of-type {
+  border-bottom: none;
+}
+
+.form-section h2 {
+  margin: 0 0 1.5rem 0;
+  color: var(--color-text);
+  font-size: 1.3rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group input:disabled {
+  background: var(--color-surface-muted);
+  color: var(--color-text-soft);
+  cursor: not-allowed;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-divider);
+}
+
+.form-actions .btn {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+}
+
+.danger-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255, 107, 107, 0.12);
+  border: 2px solid rgba(255, 107, 107, 0.35);
+  border-radius: 8px;
+}
+
+.danger-section h2 {
+  margin: 0 0 0.5rem 0;
+  color: var(--color-danger);
+  font-size: 1.2rem;
+}
+
+.danger-section p {
+  margin: 0 0 1rem 0;
+  color: var(--color-text-muted);
+}
+
+.danger-section .btn {
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .settings-container {
+    padding: 1.5rem;
+  }
+
+  .settings-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions .btn {
+    width: 100%;
+  }
+}
