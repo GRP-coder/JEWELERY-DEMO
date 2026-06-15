@@ -14,6 +14,8 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
 import Settings from './pages/Settings';
+import About from './pages/About';
+import Contact from './pages/Contact';
 import './styles/globals.css';
 
 function App() {
@@ -39,6 +41,8 @@ function App() {
               <Route path="/register" element={<Register />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/settings" element={<Settings />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
           <Footer />
